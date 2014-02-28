@@ -1,0 +1,393 @@
+#
+################################################################################
+#
+dn: cn=horde
+objectClass: olcSchemaConfig
+cn: horde
+
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.2.1.1
+  NAME 'hordePrefs'
+  DESC 'Horde Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.3.1.1
+  NAME 'impPrefs'
+  DESC 'IMP Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.4.1.1
+  NAME 'turbaPrefs'
+  DESC 'Turba Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.4.1.2
+  NAME 'turbaType'
+  DESC 'Turba Object Type: Contact/List'
+  EQUALITY caseIgnoreIA5Match
+  SUBSTR caseIgnoreIA5SubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{8}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.4.1.3
+  NAME 'turbaMembers'
+  DESC 'Encoded members of a Turba list'
+  SUP name
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.4.1.4
+  NAME 'turbaPGPPublicKey'
+  DESC 'PGP/GPG Public Key'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{4000}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.5.1.1
+  NAME 'kronolithPrefs'
+  DESC 'Kronolith Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.6.1.1
+  NAME 'nagPrefs'
+  DESC 'Nag Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.7.1.1
+  NAME 'gollemPrefs'
+  DESC 'Gollem Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.8.1.1
+  NAME 'choraPrefs'
+  DESC 'Chora Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.9.1.1
+  NAME 'mnemoPrefs'
+  DESC 'Mnemo Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.11.1.1
+  NAME 'klutzPrefs'
+  DESC 'Klutz Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.12.1.1
+  NAME 'jonahPrefs'
+  DESC 'Jonah Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.13.1.1
+  NAME 'hermesPrefs'
+  DESC 'Hermes Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.15.1.1
+  NAME 'treanPrefs'
+  DESC 'Trean Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.16.1.1
+  NAME 'whupsPrefs'
+  DESC 'Whups Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.17.1.1
+  NAME 'ingoPrefs'
+  DESC 'Ingo Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.18.1.1
+  NAME 'anselPrefs'
+  DESC 'Ansel Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.19.1.1
+  NAME 'geniePrefs'
+  DESC 'Genie Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.20.1.1
+  NAME 'scryPrefs'
+  DESC 'Scry Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.21.1.1
+  NAME 'wickedPrefs'
+  DESC 'Wicked Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.22.1.1
+  NAME 'agoraPrefs'
+  DESC 'Agora Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.24.1.1
+  NAME 'goopsPrefs'
+  DESC 'Goops Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.25.1.1
+  NAME 'merkPrefs'
+  DESC 'Merk Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.26.1.1
+  NAME 'mimpPrefs'
+  DESC 'MIMP Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.27.1.1
+  NAME 'mottlePrefs'
+  DESC 'Mottle Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.28.1.1
+  NAME 'nicPrefs'
+  DESC 'NIC Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.29.1.1
+  NAME 'occamPrefs'
+  DESC 'Occam Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.31.1.1
+  NAME 'rakimPrefs'
+  DESC 'Rakim Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.32.1.1
+  NAME 'seshaPrefs'
+  DESC 'Sesha Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.33.1.1
+  NAME 'swooshPrefs'
+  DESC 'Swoosh Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.35.1.1
+  NAME 'ulaformPrefs'
+  DESC 'Ulaform Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.36.1.1
+  NAME 'volosPrefs'
+  DESC 'Volos Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.37.1.1
+  NAME 'jetaPrefs'
+  DESC 'Jeta Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+attributeTypes: (
+  1.3.6.1.4.1.13040.38.1.1
+  NAME 'dimpPrefs'
+  DESC 'DIMP Preferences'
+  EQUALITY caseIgnoreIA5Match
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{1024}
+  )
+#
+################################################################################
+#
+objectClasses: (
+  1.3.6.1.4.1.13040.2.2.1
+  NAME 'hordePerson'
+  DESC 'Horde Preferences'
+  SUP top
+  AUXILIARY
+  MAY ( mail $ hordePrefs $ impPrefs $ turbaPrefs $ gollemPrefs $ kronolithPrefs $ mnemoPrefs $ nagPrefs $ klutzPrefs $ jonahPrefs $ hermesPrefs $ treanPrefs $ whupsPrefs $ ingoPrefs $ geniePrefs $ scryPrefs $ anselPrefs $ wickedPrefs $ choraPrefs $ agoraPrefs $ goopsPrefs $ merkPrefs $ volosPrefs $ mimpPrefs $ mottlePrefs $ nicPrefs $ occamPrefs $ rakimPrefs $ seshaPrefs $ swooshPrefs $ ulaformPrefs $ jetaPrefs $ dimpPrefs )
+  )
+#
+################################################################################
+#
+objectClasses: (
+  1.3.6.1.4.1.13040.2.2.2
+  NAME 'hordeGroup'
+  DESC 'Horde Group'
+  SUP top
+  AUXILIARY
+  MAY ( mail )
+  )
+#
+################################################################################
+#
+objectClasses: (
+  1.3.6.1.4.1.13040.4.2.1
+  NAME 'turbaContact'
+  DESC 'Turba Contact'
+  SUP top
+  AUXILIARY
+  MAY ( turbaType $ turbaMembers $ calFBURL )
+  )
+#
+################################################################################
+#

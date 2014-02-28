@@ -1,0 +1,21 @@
+dn: cn={16}puppet
+objectClass: olcSchemaConfig
+cn: {16}puppet
+olcAttributeTypes: {0}( 1.1.3.10 NAME 'puppetclass' DESC 'Puppet Node Class' E
+ QUALITY caseIgnoreIA5Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 )
+olcAttributeTypes: {1}( 1.1.3.9 NAME 'parentnode' DESC 'Puppet Parent Node' EQ
+ UALITY caseIgnoreIA5Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 )
+olcAttributeTypes: {2}( 1.1.3.11 NAME 'environment' DESC 'Puppet Node Environm
+ ent' EQUALITY caseIgnoreIA5Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 )
+olcAttributeTypes: {3}( 1.1.3.12 NAME 'puppetvar' DESC 'A variable setting for
+  puppet' EQUALITY caseIgnoreIA5Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 )
+olcObjectClasses: {0}( 1.1.1.2 NAME 'puppetClient' DESC 'Puppet Client objectc
+ lass' SUP top AUXILIARY MAY ( puppetclass $ parentnode $ environment $ puppet
+ var ) )
+structuralObjectClass: olcSchemaConfig
+entryUUID: 2bec8586-04b6-1030-850a-2db6bf8fd2c6
+creatorsName: cn=config
+createTimestamp: 20110427010521Z
+entryCSN: 20110427010521.188627Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20110427010521Z

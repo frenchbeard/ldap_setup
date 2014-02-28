@@ -1,0 +1,21 @@
+dn: ou=people,LDAP_SUFFIX
+objectClass: top
+objectClass: namedObject
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,ou=people,$LDAP_SUFFIX
+objectClass: top
+objectClass: namedObject
+objectClass: organizationalUnit
+ou: groups
+desccription: Groups of $DOMAIN
+
+
+dn: cn=ldap admins,ou=groups,$LDAP_SUFFIX
+objectClass: top
+objectClass: groupOfNames
+cn: ldap admins
+member: cn=admin,$LDAP_SUFFIX
+description: Group of LDAP administrators
+

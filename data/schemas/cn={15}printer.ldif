@@ -1,0 +1,25 @@
+dn: cn={15}printer
+objectClass: olcSchemaConfig
+cn: {15}printer
+olcAttributeTypes: {0}( 1.3.6.1.4.1.5323.22.1.1 NAME 'printerDescription' DESC
+  'Description of Printer' EQUALITY caseExactIA5Match SYNTAX 1.3.6.1.4.1.1466.
+ 115.121.1.26 SINGLE-VALUE )
+olcAttributeTypes: {1}( 1.3.6.1.4.1.5323.22.1.2 NAME 'printerURI' DESC 'CUPS s
+ tyle URI for printer' EQUALITY caseExactIA5Match SYNTAX 1.3.6.1.4.1.1466.115.
+ 121.1.26 SINGLE-VALUE )
+olcAttributeTypes: {2}( 1.3.6.1.4.1.5323.22.1.3 NAME 'printerLocation' DESC 'I
+ dentifier string for Printer Location' EQUALITY caseExactIA5Match SYNTAX 1.3.
+ 6.1.4.1.1466.115.121.1.26 SINGLE-VALUE )
+olcAttributeTypes: {3}( 1.3.6.1.4.1.5323.22.1.4 NAME 'printerMakeAndModel' DES
+ C 'String CUPS uses to figure out driver' EQUALITY caseExactIA5Match SYNTAX 1
+ .3.6.1.4.1.1466.115.121.1.26 SINGLE-VALUE )
+olcObjectClasses: {0}( 1.3.6.1.4.1.5323.22.2.1 NAME 'cupsPrinter' SUP top AUXI
+ LIARY MUST ( printerDescription $ printerURI $ printerLocation $ printerMakeA
+ ndModel ) )
+structuralObjectClass: olcSchemaConfig
+entryUUID: 2be08402-04b6-1030-8509-2db6bf8fd2c6
+creatorsName: cn=config
+createTimestamp: 20110427010521Z
+entryCSN: 20110427010521.188627Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20110427010521Z
