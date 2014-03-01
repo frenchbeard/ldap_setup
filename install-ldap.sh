@@ -1,7 +1,7 @@
 #!/bin/bash -e
 #
 # ==============================================================================
-# GNU-LDAP: 
+# GNU-LDAP:
 # LICENCE: GPL3
 # ==============================================================================
 #############################################################
@@ -9,13 +9,13 @@
 
 if [ "`id -u`" != "0" ]; then
 $CAT << _MSG
-  ---------------------------------------
-  | Error !!                            |
-  | You need root permissions to install|
-  | and configure openLDAP              |
-  |                                     |
-  | Stopping the installation process   |
-  ---------------------------------------
+  ----------------------------------------
+  | Error !!                             |
+  | You need root permissions to install |
+  | and configure openLDAP               |
+  |                                      |
+  | Stopping the installation process    |
+  ----------------------------------------
 _MSG
 	exit 1
 fi
@@ -228,12 +228,12 @@ rm -fR /var/lib/ldap
 ### main execution program
 
 case "$COMMAND" in
-    -h|-help|--help) help;;
-    install)   install;;
-    uninstall)  uninstall;;
-    test)    test;;
-    backup)  backup;;
-    *)        usage;;
+    -h|-help|--help)    help;;
+    install)            install;;
+    uninstall)          uninstall;;
+    test)               test;;
+    backup)             backup;;
+    *)                  usage;;
 esac
 
 exit 0;
